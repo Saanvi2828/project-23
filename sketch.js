@@ -33,11 +33,11 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	line1=new Box(width/2,height-80,200,20);
+	line1=new Box(width/2,height-50,200,20);
 	line2=new Box(500,height-80,20,100);
 	line3=new Box(300,height-80,20,100);
 	
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.5, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 10 , {restitution:0.5, isStatic:true});
 	World.add(world, packageBody);
 
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
